@@ -71,11 +71,11 @@ Language: Python
 
 ## Open Decisions
 - **TTS provider** – not chosen yet
-- **RSS sources** – which tech and aerospace feeds to use
+- **RSS sources** – using a trial set (see `feeds.py`): Ars Technica, The Verge,
+  Hacker News, SpaceNews, NASA, Ars Technica Space. Revisit after hearing the first episode.
 - **Episode length** – target within the 10–15 minute range
 - **Podcast app** – leaning toward Apple Podcasts (supports "Follow a Show by URL")
-- **Python version** – my Mac has Python 3.9.6 (outdated); decide whether to install
-  a newer version before starting
+- ~~**Python version**~~ – decided: Python 3.12.7 (python.org installer), used via `.venv`
 
 ## Accounts
 - GitHub: set up
@@ -85,7 +85,11 @@ Language: Python
 ## Current Status
 _Update at the end of each session._
 
-- **Last session:** — (not started)
-- **Completed:** CLAUDE.md created
-- **Next step:** Build step 1 – RSS fetcher
-- **Notes / questions:** —
+- **Last session:** 2026-10-27
+- **Completed:** Python 3.12 + `.venv`; git repo pushed to GitHub (public:
+  ElmerC02/podcast-digest); build step 1 – RSS fetcher (`fetcher.py`, `feeds.py`)
+- **Next step:** Build step 2 – Summarizer (Claude Haiku) + cost estimate per episode
+- **Notes / questions:**
+  - On Mondays, "last 24 hours" misses weekend news. Fix when scheduling (step 8).
+  - In the Claude Code sandbox, pip needs `--use-deprecated=legacy-certs`, and feed
+    downloads are flaky. Normal Terminal runs are fine.
