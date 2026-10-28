@@ -1,0 +1,18 @@
+# Files and folders git should never track or commit.
+
+# Secrets: holds the API key. Must never be committed.
+.env
+
+# The virtual environment (this project's private Python + packages).
+# It's big, specific to this Mac, and can be rebuilt any time.
+.venv/
+
+# Python's auto-generated cache files.
+__pycache__/
+*.pyc
+
+# macOS Finder clutter.
+.DS_Store
+
+# My personal Claude Code settings for this project (not meant to be shared).
+.claude/settings.local.json
