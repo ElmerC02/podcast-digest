@@ -70,7 +70,8 @@ Language: Python
 9. **Phase 2** – migrate to AWS Lambda
 
 ## Open Decisions
-- **TTS provider** – not chosen yet
+- ~~**TTS provider**~~ – decided: Amazon Polly (try Generative voices; Neural is the cheaper
+  fallback). AWS setup (step 5) now comes before text-to-speech (step 3).
 - **RSS sources** – using a trial set (see `feeds.py`): Ars Technica, The Verge,
   Hacker News, SpaceNews, NASA, Ars Technica Space. Revisit after hearing the first episode.
 - **Episode length** – target within the 10–15 minute range
@@ -91,7 +92,10 @@ _Update at the end of each session._
 - **Last session:** 2026-10-27
 - **Completed:** Python 3.12 + `.venv`; git repo pushed to GitHub (public:
   ElmerC02/podcast-digest); build step 1 – RSS fetcher (`fetcher.py`, `feeds.py`)
-- **Next step:** Build step 2 – Summarizer (Claude Haiku) + cost estimate per episode
+- **Also done:** build step 2 – Summarizer (`summarizer.py`, Claude Haiku 5.5).
+  Cost: ~$0.003 per episode, ~$0.07/month – far under the $30 budget.
+- **Next step:** Build step 5 (moved up) – AWS account, billing alert, limited IAM user
+  for Polly + S3. Then step 3 – text-to-speech with Polly.
 - **Notes / questions:**
   - On Mondays, "last 24 hours" misses weekend news. Fix when scheduling (step 8).
   - In the Claude Code sandbox, pip needs `--use-deprecated=legacy-certs`, and feed
