@@ -75,6 +75,9 @@ Language: Python
   Hacker News, SpaceNews, NASA, Ars Technica Space. Revisit after hearing the first episode.
 - **Episode length** – target within the 10–15 minute range
 - **Podcast app** – leaning toward Apple Podcasts (supports "Follow a Show by URL")
+- **Sharing** – personal only for now; may go public later if I like it. Before going public,
+  revisit: copyright/RSS terms for summarizing articles, an AI-voice disclosure in the intro,
+  the TTS provider's sharing terms, and a public (not secret-URL) feed with artwork.
 - ~~**Python version**~~ – decided: Python 3.12.7 (python.org installer), used via `.venv`
 
 ## Accounts
