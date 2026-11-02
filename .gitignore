@@ -7,6 +7,9 @@
 # It's big, specific to this Mac, and can be rebuilt any time.
 .venv/
 
+# Generated episode files (scripts now, MP3s later). Rebuilt every run.
+output/
+
 # Python's auto-generated cache files.
 __pycache__/
 *.pyc
